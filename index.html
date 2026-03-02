@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Perforated Edge — Stamp Collectors Society</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">&#9632;</span>
+        <span>The Perforated Edge</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#join" class="nav-cta">Join the Club</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#join">Join the Club</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-stamps" id="heroStamps">
+      <!-- Stamps injected by JS -->
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>Est. 1962 · Philadelphia, PA</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Every Stamp</span>
+        <span class="title-line title-line--accent">Tells a Story</span>
+        <span class="title-line">Worth Obsessing Over</span>
+      </h1>
+      <p class="hero-sub">
+        A society for those who know that the world's greatest adventures<br>
+        are sealed in 1.5 square inches of history.
+      </p>
+      <div class="hero-actions">
+        <a href="#join" class="btn btn--primary">Become a Member</a>
+        <a href="#collection" class="btn btn--ghost">Explore the Collection</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       MARQUEE STRIP
+  ══════════════════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Rare Finds</span>
+      <span class="dot">◆</span>
+      <span>Inverted Jennys</span>
+      <span class="dot">◆</span>
+      <span>First Day Covers</span>
+      <span class="dot">◆</span>
+      <span>Plate Blocks</span>
+      <span class="dot">◆</span>
+      <span>Airmail Pioneers</span>
+      <span class="dot">◆</span>
+      <span>Error Stamps</span>
+      <span class="dot">◆</span>
+      <span>Victorian Classics</span>
+      <span class="dot">◆</span>
+      <span>Revenue Stamps</span>
+      <span class="dot">◆</span>
+      <span>Rare Finds</span>
+      <span class="dot">◆</span>
+      <span>Inverted Jennys</span>
+      <span class="dot">◆</span>
+      <span>First Day Covers</span>
+      <span class="dot">◆</span>
+      <span>Plate Blocks</span>
+      <span class="dot">◆</span>
+      <span>Airmail Pioneers</span>
+      <span class="dot">◆</span>
+      <span>Error Stamps</span>
+      <span class="dot">◆</span>
+      <span>Victorian Classics</span>
+      <span class="dot">◆</span>
+      <span>Revenue Stamps</span>
+      <span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       ABOUT / MANIFESTO
+  ══════════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="manifesto-grid">
+        <div class="manifesto-left">
+          <div class="section-label">Our Philosophy</div>
+          <h2 class="section-title">Stamps are not<br><em>just</em> postage.</h2>
+          <div class="manifesto-stamp-art">
+            <div class="stamp-art stamp-art--penny-black">
+              <div class="stamp-inner">
+                <div class="stamp-portrait"></div>
+                <div class="stamp-label">ONE PENNY</div>
+                <div class="stamp-country">GREAT BRITAIN</div>
+                <div class="stamp-postmark"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="manifesto-right">
+          <p class="manifesto-large">
+            They are dispatches from the past — miniature windows into the moments,
+            empires, inventions, and obsessions that shaped our world.
+          </p>
+          <div class="manifesto-stats">
+            <div class="stat">
+              <div class="stat-number" data-target="847">0</div>
+              <div class="stat-label">Active Members</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="12400">0</div>
+              <div class="stat-label">Catalogued Stamps</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="63">0</div>
+              <div class="stat-label">Years Running</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="94">0</div>
+              <div class="stat-label">Countries Represented</div>
+            </div>
+          </div>
+          <p class="manifesto-body">
+            The Perforated Edge has been Philadelphia's premier philatelic society since 1962.
+            We welcome everyone from seasoned specialists to the curious newcomer who just
+            found a grandmother's album in the attic and felt something stir.
+          </p>
+          <a href="#join" class="btn btn--primary">Start your collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FEATURED STAMPS
+  ══════════════════════════════════════════════ -->
+  <section id="collection" class="section section--dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Member Highlights</div>
+        <h2 class="section-title">The Collection</h2>
+        <p class="section-desc">A selection of remarkable pieces from our members' archives.</p>
+      </div>
+
+      <div class="stamps-grid">
+
+        <div class="stamp-card" data-category="Classic">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--1">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--eagle">
+                    <div class="scene-sky"></div>
+                    <div class="scene-eagle">
+                      <div class="eagle-body"></div>
+                      <div class="eagle-wing eagle-wing--l"></div>
+                      <div class="eagle-wing eagle-wing--r"></div>
+                    </div>
+                    <div class="scene-mountain"></div>
+                  </div>
+                  <div class="stamp-denom">3¢</div>
+                  <div class="stamp-nation">U · S · A</div>
+                </div>
+              </div>
+              <div class="stamp-cancel"></div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1934</span>
+                <span class="stamp-cat">Scott #773</span>
+              </div>
+              <h3 class="stamp-card-title">American Bald Eagle</h3>
+              <p class="stamp-card-desc">Issued for the National Parks series. Deep carmine on crisp white. One of the defining images of New Deal philately.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--mint"></span>
+                <span>Mint NH — Grade 95</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp-card stamp-card--featured" data-category="Rare">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--2">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--inverted">
+                    <div class="biplane">
+                      <div class="biplane-body"></div>
+                      <div class="biplane-wing biplane-wing--top"></div>
+                      <div class="biplane-wing biplane-wing--bot"></div>
+                      <div class="biplane-tail"></div>
+                    </div>
+                    <div class="inverted-sky"></div>
+                  </div>
+                  <div class="stamp-denom">24¢</div>
+                  <div class="stamp-nation">U · S · A</div>
+                </div>
+              </div>
+              <div class="featured-badge">Centerpiece</div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1918</span>
+                <span class="stamp-cat">Scott #C3a</span>
+              </div>
+              <h3 class="stamp-card-title">Inverted Jenny</h3>
+              <p class="stamp-card-desc">The holy grail of U.S. philately. The Curtiss JN-4 biplane, printed upside-down by error. Only 100 known to exist.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--rare"></span>
+                <span>Block of 4 — Society Archive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp-card" data-category="International">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--3">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--victoria">
+                    <div class="victoria-portrait">
+                      <div class="portrait-head"></div>
+                      <div class="portrait-crown"></div>
+                      <div class="portrait-neck"></div>
+                    </div>
+                    <div class="victoria-bg"></div>
+                  </div>
+                  <div class="stamp-denom">1d</div>
+                  <div class="stamp-nation">GREAT BRITAIN</div>
+                </div>
+              </div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1840</span>
+                <span class="stamp-cat">SG #1</span>
+              </div>
+              <h3 class="stamp-card-title">Penny Black Replica</h3>
+              <p class="stamp-card-desc">The world's first adhesive postage stamp. Queen Victoria at 15. A member-owned contemporary replica displayed with pride.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--good"></span>
+                <span>Fine Used — Four Margins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp-card" data-category="Airmail">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--4">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--zeppelin">
+                    <div class="zeppelin-body"></div>
+                    <div class="zeppelin-gondola"></div>
+                    <div class="zeppelin-fins"></div>
+                    <div class="zeppelin-clouds">
+                      <div class="cloud c1"></div>
+                      <div class="cloud c2"></div>
+                    </div>
+                  </div>
+                  <div class="stamp-denom">$1.30</div>
+                  <div class="stamp-nation">U · S · AIRMAIL</div>
+                </div>
+              </div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1930</span>
+                <span class="stamp-cat">Scott #C14</span>
+              </div>
+              <h3 class="stamp-card-title">Graf Zeppelin</h3>
+              <p class="stamp-card-desc">Issued for the Europa-Pan America Flight of 1930. The $1.30 value — a king's ransom at the time — in deep brown on off-white.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--mint"></span>
+                <span>Mint OG — Never Hinged</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp-card" data-category="Modern">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--5">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--moon">
+                    <div class="moon-surface"></div>
+                    <div class="moon-astronaut">
+                      <div class="astro-helmet"></div>
+                      <div class="astro-body"></div>
+                    </div>
+                    <div class="moon-earth"></div>
+                    <div class="moon-stars">
+                      <div class="star s1"></div>
+                      <div class="star s2"></div>
+                      <div class="star s3"></div>
+                    </div>
+                  </div>
+                  <div class="stamp-denom">10¢</div>
+                  <div class="stamp-nation">U · S · A</div>
+                </div>
+              </div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1969</span>
+                <span class="stamp-cat">Scott #C76</span>
+              </div>
+              <h3 class="stamp-card-title">First Moon Landing</h3>
+              <p class="stamp-card-desc">Issued the day astronauts returned. A historic stamp for a historic moment — printed on unwatermarked paper, tagged for automation.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--good"></span>
+                <span>Used — First Day Cancel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stamp-card" data-category="International">
+          <div class="stamp-card-inner">
+            <div class="stamp-visual stamp-visual--6">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area">
+                  <div class="stamp-scene stamp-scene--japan">
+                    <div class="japan-mount">
+                      <div class="mount-peak"></div>
+                      <div class="mount-snow"></div>
+                    </div>
+                    <div class="japan-sun"></div>
+                    <div class="japan-cherry">
+                      <div class="cherry-branch"></div>
+                      <div class="cherry-bloom b1"></div>
+                      <div class="cherry-bloom b2"></div>
+                      <div class="cherry-bloom b3"></div>
+                    </div>
+                  </div>
+                  <div class="stamp-denom">¥5</div>
+                  <div class="stamp-nation">日本 NIPPON</div>
+                </div>
+              </div>
+            </div>
+            <div class="stamp-card-info">
+              <div class="stamp-card-meta">
+                <span class="stamp-year">1952</span>
+                <span class="stamp-cat">JSCA #614</span>
+              </div>
+              <h3 class="stamp-card-title">Fuji & Cherry Blossom</h3>
+              <p class="stamp-card-desc">Post-occupation Japan's first definitive series. Mt. Fuji framed by sakura — woodblock printing tradition meets modern philately.</p>
+              <div class="stamp-card-condition">
+                <span class="condition-dot condition-dot--mint"></span>
+                <span>Mint — Block of 6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       WHY STAMPS / PULL QUOTE SECTION
+  ══════════════════════════════════════════════ -->
+  <section class="section section--quote">
+    <div class="container">
+      <div class="pull-quote-layout">
+        <div class="pull-quote-stamps">
+          <div class="floating-stamps" id="floatingStamps"></div>
+        </div>
+        <div class="pull-quote-text">
+          <blockquote>
+            <p>"A stamp collection is a cabinet of curiosities you can hold in your hand —
+            every page a journey, every hinge a small act of faith in the past."</p>
+            <cite>— Eleanor Voss, President, The Perforated Edge (1987–2004)</cite>
+          </blockquote>
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-icon">&#9993;</div>
+              <div>
+                <strong>History in miniature</strong>
+                <p>Each stamp is a primary source — government art, propaganda, celebration, and mourning condensed to a thumbnail.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">&#128269;</div>
+              <div>
+                <strong>The thrill of the hunt</strong>
+                <p>Varieties, errors, misperfs — the more you learn, the more you see. A pile of "common" stamps can hide a fortune.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">&#127758;</div>
+              <div>
+                <strong>A global community</strong>
+                <p>Trade with collectors from 94 countries. Your stamps traveled the world — now so can you, through them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       EVENTS
+  ══════════════════════════════════════════════ -->
+  <section id="events" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">What's On</div>
+        <h2 class="section-title">Upcoming Events</h2>
+      </div>
+      <div class="events-list">
+
+        <div class="event-item event-item--featured">
+          <div class="event-date-block">
+            <div class="event-month">APR</div>
+            <div class="event-day">12</div>
+          </div>
+          <div class="event-details">
+            <div class="event-tag">Annual Showcase</div>
+            <h3 class="event-title">Spring Philatelic Exposition 2026</h3>
+            <p class="event-desc">Our biggest event of the year. 200+ dealers, competitive exhibits, expertization clinic, and the annual awards dinner. Three days of stamps.</p>
+            <div class="event-meta">
+              <span>&#128205; Philadelphia Convention Center</span>
+              <span>&#128336; 9am – 6pm, Fri–Sun</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary btn--sm">Get Tickets</a>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-block">
+            <div class="event-month">APR</div>
+            <div class="event-day">28</div>
+          </div>
+          <div class="event-details">
+            <div class="event-tag">Workshop</div>
+            <h3 class="event-title">Introduction to Philately</h3>
+            <p class="event-desc">New to stamps? This two-hour session covers tools, catalogs, grading basics, and how to spot a find at a flea market.</p>
+            <div class="event-meta">
+              <span>&#128205; Society Library, 4th Floor</span>
+              <span>&#128336; 6:30pm – 8:30pm</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--ghost btn--sm">Reserve Spot</a>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-block">
+            <div class="event-month">MAY</div>
+            <div class="event-day">10</div>
+          </div>
+          <div class="event-details">
+            <div class="event-tag">Auction</div>
+            <h3 class="event-title">Estate Collection Sale — The Hargrove Archive</h3>
+            <p class="event-desc">Rare opportunity: 60 years of systematic collecting, including 19th-century classics and an exceptional run of U.S. airmail. Preview the week before.</p>
+            <div class="event-meta">
+              <span>&#128205; Online + In-Person Bidding</span>
+              <span>&#128336; Bidding opens 2pm</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--ghost btn--sm">Preview Lots</a>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-block">
+            <div class="event-month">MAY</div>
+            <div class="event-day">17</div>
+          </div>
+          <div class="event-details">
+            <div class="event-tag">Monthly Meeting</div>
+            <h3 class="event-title">Member Swap Night + "Errors I Have Known"</h3>
+            <p class="event-desc">Bring stamps to trade and stay for longtime member Dr. Patricia Chow's talk on fifty years of hunting — and finding — error stamps.</p>
+            <div class="event-meta">
+              <span>&#128205; 221 Walnut St, Suite 400</span>
+              <span>&#128336; 7pm – 9:30pm</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn--ghost btn--sm">RSVP</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       GALLERY
+  ══════════════════════════════════════════════ -->
+  <section id="gallery" class="section section--dark">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Visual Archive</div>
+        <h2 class="section-title">The Gallery</h2>
+        <p class="section-desc">Hover to zoom. Each one a world.</p>
+      </div>
+      <div class="gallery-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="usa">USA</button>
+        <button class="filter-btn" data-filter="europe">Europe</button>
+        <button class="filter-btn" data-filter="asia">Asia</button>
+        <button class="filter-btn" data-filter="airmail">Airmail</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       JOIN
+  ══════════════════════════════════════════════ -->
+  <section id="join" class="section section--join">
+    <div class="join-bg-stamps" id="joinBgStamps"></div>
+    <div class="container">
+      <div class="join-inner">
+        <div class="join-text">
+          <div class="section-label">Membership</div>
+          <h2 class="section-title">Ready to join the obsession?</h2>
+          <p>Membership includes access to our 12,400-stamp archive, monthly meetings, the quarterly journal <em>The Margin</em>, discounts at 40+ dealers, and a community of people who understand why you just spent three hours looking at a 1¢ blue.</p>
+          <div class="membership-tiers">
+            <div class="tier">
+              <div class="tier-name">Collector</div>
+              <div class="tier-price">$45<span>/yr</span></div>
+              <ul>
+                <li>Digital archive access</li>
+                <li>Monthly newsletter</li>
+                <li>Event discounts</li>
+              </ul>
+            </div>
+            <div class="tier tier--featured">
+              <div class="tier-badge">Most Popular</div>
+              <div class="tier-name">Philatelist</div>
+              <div class="tier-price">$95<span>/yr</span></div>
+              <ul>
+                <li>Full archive + library access</li>
+                <li>Print journal quarterly</li>
+                <li>Free event admission</li>
+                <li>Trading platform access</li>
+              </ul>
+            </div>
+            <div class="tier">
+              <div class="tier-name">Fellow</div>
+              <div class="tier-price">$195<span>/yr</span></div>
+              <ul>
+                <li>Everything in Philatelist</li>
+                <li>Free expertization (2/yr)</li>
+                <li>Auction preview access</li>
+                <li>Voting & committee rights</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="join-form-wrap">
+          <form class="join-form" id="joinForm">
+            <h3>Apply for Membership</h3>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="interest">Primary Interest</label>
+              <select id="interest">
+                <option value="">Select your focus area…</option>
+                <option>U.S. Classics (pre-1900)</option>
+                <option>U.S. 20th Century</option>
+                <option>Airmail & Zeppelin</option>
+                <option>British Commonwealth</option>
+                <option>Continental Europe</option>
+                <option>Asia & Pacific</option>
+                <option>Topicals</option>
+                <option>Errors & Varieties</option>
+                <option>Revenue & Fiscal</option>
+                <option>Just starting out</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tier-select">Membership Tier</label>
+              <select id="tier-select">
+                <option>Collector — $45/yr</option>
+                <option selected>Philatelist — $95/yr</option>
+                <option>Fellow — $195/yr</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your collection (optional)</label>
+              <textarea id="message" placeholder="What do you collect? How long have you been at it?" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Submit Application</button>
+            <p class="form-note">We'll follow up within 2 business days. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-stamp">
+              <div class="stamp-perf-border">
+                <div class="stamp-image-area success-inner">
+                  <div class="success-check">&#10003;</div>
+                  <div class="success-text">APPLICATION<br>RECEIVED</div>
+                </div>
+              </div>
+            </div>
+            <h3>You're on your way!</h3>
+            <p>We'll be in touch shortly. In the meantime, explore our collection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark">&#9632;</span>
+            <span>The Perforated Edge</span>
+          </div>
+          <p>Philadelphia's premier philatelic society since 1962. Dedicated to the art, history, and community of stamp collecting.</p>
+          <div class="footer-stamp-row">
+            <div class="mini-stamp ms-1"></div>
+            <div class="mini-stamp ms-2"></div>
+            <div class="mini-stamp ms-3"></div>
+            <div class="mini-stamp ms-4"></div>
+            <div class="mini-stamp ms-5"></div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#collection">The Collection</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Dealer Directory</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Society</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#join">Membership</a></li>
+            <li><a href="#">The Margin Journal</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Find Us</h4>
+          <address>
+            221 Walnut Street, Suite 400<br>
+            Philadelphia, PA 19106<br><br>
+            <a href="mailto:hello@perforatededge.org">hello@perforatededge.org</a><br>
+            (215) 555-0147
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Perforated Edge Philatelic Society. All rights reserved.</p>
+        <p class="footer-postmark">&#9993; Delivered with care since 1962</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
