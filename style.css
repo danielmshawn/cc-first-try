@@ -496,6 +496,53 @@ strong { font-weight: 700; color: var(--ink); }
 
 
 /* ============================================================
+   PROCESS STEPS (Benefits section — how a meeting works)
+   ============================================================ */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  row-gap: 0;
+  margin-bottom: 56px;
+}
+
+.process-step {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 15px 0;
+  border-bottom: 1px dashed var(--linen);
+}
+
+.process-num {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+  opacity: 0.65;
+  min-width: 22px;
+}
+
+.process-text {
+  font-size: 1rem;
+  color: var(--brown);
+  line-height: 1.55;
+}
+
+.process-cards-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+  padding-top: 4px;
+}
+
+
+/* ============================================================
    BENEFITS
    ============================================================ */
 #benefits {
@@ -506,12 +553,15 @@ strong { font-weight: 700; color: var(--ink); }
 }
 
 .benefits-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 
 .benefit-card {
+  flex: 0 1 calc(33.333% - 16px);
+  min-width: 260px;
   background: var(--cream);
   border: 1px solid rgba(180,150,100,0.25);
   border-radius: var(--radius);
@@ -762,6 +812,60 @@ strong { font-weight: 700; color: var(--ink); }
   margin-top: auto;
 }
 .map-link:hover { color: var(--dark-red); }
+
+/* Dutch auction explainer */
+.dutch-explainer {
+  margin: 40px 0 32px;
+  border: 1px solid rgba(180,150,100,0.3);
+  border-radius: var(--radius);
+  background: var(--cream);
+  overflow: hidden;
+}
+.dutch-explainer summary {
+  padding: 16px 22px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink);
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dutch-explainer summary::-webkit-details-marker { display: none; }
+.dutch-explainer summary::before {
+  content: '▶';
+  font-size: 0.65rem;
+  color: var(--red);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+.dutch-explainer[open] summary::before {
+  transform: rotate(90deg);
+}
+.dutch-explainer summary:hover { color: var(--red); }
+.dutch-explainer-body {
+  padding: 0 22px 20px;
+  border-top: 1px solid rgba(180,150,100,0.2);
+}
+.dutch-explainer-body p {
+  font-size: 0.92rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin: 14px 0 0;
+}
+.dutch-explainer-body ul {
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+}
+.dutch-explainer-body li {
+  font-size: 0.91rem;
+  color: var(--ink);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
 
 .meeting-cta {
   text-align: center;
@@ -1324,7 +1428,7 @@ strong { font-weight: 700; color: var(--ink); }
   .about-stamp       { max-width: 180px; }
   .about-details     { max-width: none; }
 
-  .benefits-grid     { grid-template-columns: repeat(2, 1fr); }
+  .process-grid      { grid-template-columns: 1fr; }
   .meeting-grid      { grid-template-columns: 1fr 1fr; }
   .meeting-card--map { grid-column: span 2; }
 
