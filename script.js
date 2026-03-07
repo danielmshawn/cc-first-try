@@ -14,7 +14,10 @@ function getNthWednesdaysInMonth(year, month) {
       wednesdays.push(new Date(year, month, d));
     }
   }
-  // Return 2nd and 4th Wednesday (indices 1 and 3)
+  // November (10) and December (11): no meeting on 4th Wednesday
+  if (month === 10 || month === 11) {
+    return [wednesdays[1]].filter(Boolean);
+  }
   return [wednesdays[1], wednesdays[3]].filter(Boolean);
 }
 
