@@ -128,7 +128,7 @@ strong { font-weight: 700; color: var(--ink); }
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 1rem;
-  border: 2px solid var(--linen);
+  border: 2px solid rgba(107,59,28,0.4);
   border-radius: var(--radius);
   transition: border-color var(--transition), color var(--transition), transform var(--transition);
 }
@@ -517,13 +517,12 @@ strong { font-weight: 700; color: var(--ink); }
 }
 
 .process-num {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--red);
-  letter-spacing: 0.08em;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0;
   flex-shrink: 0;
-  opacity: 0.65;
   min-width: 26px;
 }
 
@@ -577,11 +576,11 @@ strong { font-weight: 700; color: var(--ink); }
 }
 
 .benefit-num {
-  font-family: var(--font-display);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--red);
-  letter-spacing: 0.1em;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: 0;
   margin-bottom: 12px;
   opacity: 0.7;
 }
@@ -707,15 +706,6 @@ strong { font-weight: 700; color: var(--ink); }
   color: var(--light-muted);
 }
 
-.broadside-results-link {
-  font-size: 0.82rem;
-  color: var(--muted);
-  margin-top: 4px;
-}
-.broadside-results-link a {
-  color: var(--red);
-  font-weight: 600;
-}
 
 
 /* ============================================================
